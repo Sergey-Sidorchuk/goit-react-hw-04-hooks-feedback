@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-02-feedback",
+  "name": "goit-react-hw-04-hooks-feedback",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sergey-sidorchuk.github.io/goit-react-hw-02-feedback",
+  "homepage": "https://sergey-sidorchuk.github.io/goit-react-hw-04-hooks-feedback",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -11,7 +11,10 @@
     "react": "^17.0.2",
     "react-css-modules": "^4.7.11",
     "react-dom": "^17.0.2",
+    "react-hook-use-state": "^1.1.0",
+    "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "4.0.3",
+    "usestate": "^1.1.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "css-loader": "^6.2.0",
     "prop-types": "^15.7.2"
   }
 }
