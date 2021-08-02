@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
@@ -29,6 +29,7 @@ Statistics.propTypes = {
     neutral: PropTypes.number,
     bad: PropTypes.number,
     total: PropTypes.number,
+    positivePercentage: PropTypes.string.isRequired,
   
 };
 

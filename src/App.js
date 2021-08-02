@@ -2,11 +2,10 @@ import React from 'react';
 import { useState } from "react";
 import './App.css';
 
-
 import FeedbackOptions from "./components/FeedbackOptions";
 import Section from './components/FeedbackOptions';
 import Statistics from "./components/Statistics";
-import Notification from './components/Notification';
+import Notification from './components/Notification/Notification';
 
 
 export default function App() {
@@ -46,10 +45,7 @@ const [bad, setBad] = useState(0);
             <h1>Please leave feedback</h1>
 
         <Section title="">
-                <FeedbackOptions options=
-                    {
-                        ['good', 'neutral', 'bad']
-                    }
+                <FeedbackOptions options={['good', 'neutral', 'bad']}
                     onLeaveFeedback={onLeaveFeedback}>
                     
                     </FeedbackOptions>
@@ -57,7 +53,13 @@ const [bad, setBad] = useState(0);
             {
                 countTotalFeedback() !== 0
                 ? <Section title="Statistics">
-                    <Statistics  good={good} neutral={neutral} bad={bad} total={countTotalFeedback()} positivePercentage={countPositiveFeedbackPercentage()} />
+                        <Statistics
+                            good={good}
+                            neutral={neutral}
+                            bad={bad}
+                            total={countTotalFeedback()}
+                            positivePercentage={countPositiveFeedbackPercentage()}
+                        />
                 </Section>
                 : < Notification message="No feedback given" />
             }
