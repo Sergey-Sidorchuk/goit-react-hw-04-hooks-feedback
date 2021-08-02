@@ -1,0 +1,15 @@
+.good {
+  font-weight: 700;
+  color: rgb(6, 66, 231);
+}
+.neutral {
+  font-weight: 700;
+  color: rgb(22, 104, 1);
+}
+.bad {
+  font-weight: 700;
+  color: rgb(252, 42, 5);
+}
+/* .feedback {
+  color: blueviolet;
+} */
