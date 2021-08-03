@@ -5,7 +5,8 @@ import './App.css';
 import FeedbackOptions from "./components/FeedbackOptions";
 import Section from './components/FeedbackOptions';
 import Statistics from "./components/Statistics";
-import Notification from './components/Notification/Notification';
+import Notification from './components/Notification';
+import { dataOptions } from "./components/data/dataOptions";
 
 
 export default function App() {
@@ -18,8 +19,10 @@ const [bad, setBad] = useState(0);
         const totalFeedbacks = good + neutral + bad;
         return totalFeedbacks;
     };
+
+   
     const countPositiveFeedbackPercentage = () => {
-        const percentageOfGoodFeedback = ((good / (good + neutral + bad)) * 100).toFixed(2);
+        const percentageOfGoodFeedback = ((good / countTotalFeedback) * 100).toFixed(2);
         return percentageOfGoodFeedback;
     };
     
@@ -39,14 +42,15 @@ const [bad, setBad] = useState(0);
                             return;
         }
     };
+
+
     return (
         <div className="App">
             <h1>Please leave feedback</h1>
-
         <Section title="">
-                <FeedbackOptions options={['good', 'neutral', 'bad']}
+                <FeedbackOptions
+                    options={dataOptions}
                     onLeaveFeedback={onLeaveFeedback}>
-                    
                     </FeedbackOptions>
         </Section>
             {

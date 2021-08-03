@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 
 const Section = ({ title, children }) => (
-    <div>
+    <section>
         {title && <h2>{title}</h2>}
         {children}
 
-    </div>
+    </section>
 );
 
 Section.defaultProps = {
