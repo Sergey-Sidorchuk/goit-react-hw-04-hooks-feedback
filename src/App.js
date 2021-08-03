@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import './App.css';
 
 import FeedbackOptions from "./components/FeedbackOptions";
-import Section from './components/FeedbackOptions';
+import Section from './components/Section';
 import Statistics from "./components/Statistics";
 import Notification from './components/Notification';
 
