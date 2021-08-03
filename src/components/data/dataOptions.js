@@ -1,1 +1,0 @@
-export const dataOptions = ["good", "neutral", "bad"];
